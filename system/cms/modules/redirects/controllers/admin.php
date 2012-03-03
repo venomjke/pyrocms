@@ -3,9 +3,7 @@
  * Cms controller for the redirects module
  *
  * @author 		PyroCMS Dev Team
- * @package 	PyroCMS
- * @subpackage 	Variables Module
- * @category	Modules
+ * @package 	PyroCMS\Core\Modules\Redirects\Controllers
  */
 class Admin extends Admin_Controller
 {
@@ -73,7 +71,6 @@ class Admin extends Admin_Controller
 			{
 				$this->session->set_flashdata('success', lang('redirects.add_success'));
 
-				// Redirect
 				redirect('admin/redirects');
 			}
 			
@@ -158,7 +155,6 @@ class Admin extends Admin_Controller
 			$this->session->set_flashdata('error', $this->lang->line('redirects.no_select_error'));
 		}		
 		
-		// Redirect
 		redirect('admin/redirects');
 	}
 	
